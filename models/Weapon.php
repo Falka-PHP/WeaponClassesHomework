@@ -5,33 +5,29 @@ abstract class Weapon
     private $damage;
     private $multiplier;
 
-    function getDamage()
+    public function getDamage()
     {
         return $this->damage;
     }
 
-    function setDamage($newDamage)
+    public function setDamage($newDamage)
     {
         $this->damage = $newDamage;
     }
 
-    function getMultiplier()
+    public function getMultiplier()
     {
         return $this->multiplier;
     }
 
-    function setMultiplier($newMultiplier)
+    public function setMultiplier($newMultiplier)
     {
         $this->multiplier = $newMultiplier;
     }
 
-    function __constructor($damage, $multiplier)
-    {
-        $this->setDamage($damage);
-        $this->setMultiplier($multiplier);
-    }
 
 
-    abstract public function Shoot();
+    abstract public function getWeaponType();
+    abstract public function shoot();
 
 }

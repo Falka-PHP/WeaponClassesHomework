@@ -19,14 +19,8 @@
 <h1 style="text-align: center">Home-task 1</h1>
 <div class="row">
 <div class="col-lg-4"></div>
-<div class="d-flex justify-content-center weapon-selector col-lg-4">
+<div class=" justify-content-center weapon-selector col-lg-4">
     <?php
-    if(isset($_GET['page'])){
-        $page_number = $_GET['page'];
-        if($page_number==2){
-            include_once('pages/weapon_control.php');
-        }
-    }else
         include_once('pages/weapon_selector.php');
     ?>
 </div>
